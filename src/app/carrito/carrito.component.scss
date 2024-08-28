@@ -1,0 +1,75 @@
+ion-content {
+    background-color: #fff;
+    padding: 16px;
+}
+
+ion-list {
+    margin: 0;
+    padding: 0;
+}
+
+ion-item {
+    --padding-start: 16px;
+    --padding-end: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+ion-thumbnail {
+    --size: 80px;
+}
+
+ion-thumbnail img {
+    border-radius: 4px;
+}
+
+ion-label {
+    margin-left: 16px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    margin: 4px 0;
+    color: #666;
+}
+
+ion-buttons {
+    margin-left: auto;
+}
+
+ion-button {
+    --color: #333;
+    --border-radius: 8px;
+    --padding-start: 8px;
+    --padding-end: 8px;
+}
+
+ion-button ion-icon {
+    font-size: 20px;
+}
+
+ion-button[expand="full"] {
+    margin-top: 16px;
+    background-color: #3880ff;
+    color: #fff;
+}
+
+ion-button[expand="full"] ion-icon {
+    font-size: 20px;
+}
+
+ion-button[expand="full"]:hover {
+    background-color: #3171e0;
+}
+
+ng-template p {
+    text-align: center;
+    color: #666;
+    font-size: 1.2rem;
+    margin-top: 16px;
+}

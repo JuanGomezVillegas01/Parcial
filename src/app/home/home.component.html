@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Productos</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="irCarrito()">
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Categoría</ion-label>
+    <ion-select (ionChange)="onCategoryChange($event.detail.value)">
+      <ion-select-option *ngFor="let categoria of categoria" [value]="categoria">
+        {{ categoria }}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <div class="product-list">
+    <div *ngFor="let producto of producto" class="product-card">
+      <img [src]="producto.image" class="product-image" />
+      <div class="product-details">
+        <h2 class="product-name">{{ producto.title }}</h2>
+        <p class="product-price">{{ producto.price | currency: 'USD' }}</p>
+        <button (click)="irDetalles(producto.id)">Ver más</button>
+      </div>
+    </div>
+  </div>
+</ion-content>
